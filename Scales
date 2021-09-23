@@ -1,0 +1,47 @@
+using System;
+
+namespace Scales
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+ 
+            int biggest_bag = 0;
+            double[] bag_weigth = new double [5];
+            bag_weigth[0] = 1;
+            bag_weigth[1] = 1;
+            bag_weigth[2] = 1;
+            bag_weigth[3] = 1;
+            bag_weigth[4] = 1.1;     
+            
+                if (bag_weigth[0] > bag_weigth[1])
+                {
+                    biggest_bag = 1;
+                    Console.WriteLine("Largest bag is nr: ", biggest_bag);
+
+                }
+                else if (bag_weigth[0] < bag_weigth[1])
+                {
+                    biggest_bag = 2;
+                    Console.WriteLine("Largest bag is nr: ", biggest_bag);
+                }
+                else if (bag_weigth[2] < bag_weigth[3])
+                {
+
+                    biggest_bag = 3;
+                    Console.WriteLine("Largest bag is nr: ", biggest_bag);
+                }
+                else if (bag_weigth[2] < bag_weigth[3])
+                {
+                    biggest_bag = 4;
+                    Console.WriteLine("Largest bag is nr: ", biggest_bag);
+                }
+                else 
+                {
+                    biggest_bag = 5;
+                    Console.WriteLine("Largest bag is nr: ", biggest_bag);
+                }           
+        }
+    }
+}
